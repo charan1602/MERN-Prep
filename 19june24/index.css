@@ -1,0 +1,16 @@
+.parentcontainer{
+    display: grid;
+    grid-template-columns: auto auto auto;
+   
+}
+.strawhats{
+    border: 1px solid rgb(88, 81, 81);
+    border-radius: 15px;
+    align-items: center;
+    text-align: center;
+    margin: 1px;
+}
+img{
+    height: 270px;
+
+}
