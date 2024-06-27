@@ -1,0 +1,19 @@
+.parentcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: row; */
+    /* border: 1px solid black; */
+    /* margin: 2px; */
+    gap: 4em;
+
+}
+.items{
+    border: 1px solid black;
+    background-color: aqua;
+    flex-grow: 1;
+    max-height: 400px;
+    min-height: 200px;
+    min-width: 200px;
+   max-width:  400px;
+
+}
