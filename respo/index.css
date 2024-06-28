@@ -35,3 +35,15 @@ table ,th, tr, td{
     flex-direction: column; 
     gap: 5em;
  }
+ header{
+    background-color: aqua;
+    position: sticky;
+    /* align-items: center;
+    justify-content: center; */
+ }
+  ul {
+    display: flex;
+ }
+ ul li{
+    /* justify-content:space-evenly; */
+ }

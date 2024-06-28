@@ -22,6 +22,8 @@ body{
     background-color: blueviolet;
 }
 @keyframes move {
+    from{top:0px}
+    to{top: 500px;}
     
 }
 .parent{
