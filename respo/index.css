@@ -30,14 +30,17 @@ table ,th, tr, td{
     grid-template-columns: 1fr 1fr 1fr;
     border: 1px solid black;
 }
-.item1>div{
+.items{
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
+    /* justify-content: center;  */
+    align-items: center;
     gap: 5em;
  }
  header{
     background-color: aqua;
     position: sticky;
+    min-height: 100px;
     /* align-items: center;
     justify-content: center; */
  }
@@ -46,4 +49,13 @@ table ,th, tr, td{
  }
  ul li{
     /* justify-content:space-evenly; */
+ }
+ aside{
+    border: 2px solid black;
+ }
+ main{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    border: 1px solid black;
  }
