@@ -1,0 +1,41 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.square{
+    border: 10px solid black;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle{
+    border: 5px solid black;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+.carousel{
+    height: 500px;
+    width: 700px;
+    /* position: sticky; */
+}
+.carousel img{
+    height: 400px;
+    width: 400px;
+  object-fit: cover;
+  /* opacity: 0.5; */
+}
+.slider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    /* top: 0; */
+    bottom: 0;
+    
+    
+}
