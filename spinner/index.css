@@ -6,7 +6,7 @@
 }
 .circle{
     border: 10px solid rgb(184, 206, 85);
-    border-top:10px solid rgb(99, 247, 99);
+    border-top:3px solid rgb(99, 247, 99);
     border-radius: 50%;
     width: 100px;
     height: 100px;
