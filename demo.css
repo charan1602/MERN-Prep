@@ -1,0 +1,25 @@
+/* .main{
+    border: 1px solid black;
+    height: 600px;
+    display: flex;
+    flex-wrap:wrap;
+    gap: 10px;
+}
+.main > div{
+    border: 1px solid black;
+    height: 50%;
+    width: 300px;
+} */
+ /* demo.css */
+.card {
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-img-top {
+    height: 180px; /* Adjust as needed */
+    /* object-fit: cover; */
+}
