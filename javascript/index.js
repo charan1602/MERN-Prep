@@ -27,7 +27,7 @@ function abc(){
 function az(cb){
    cb()
 }
-function sx(){
+function sx(){                                      //call back function
     console.log("charan")
 }
 az(sx)
