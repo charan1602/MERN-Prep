@@ -6,15 +6,23 @@
 }
 .data_div{
     border-radius: 10%;
+    border: 2px solid blue ;
     height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: bisque;
 }
 @media(max-width:789px){
     
     #main_container{
         display: grid;
         grid-template-columns: auto auto;
+    }
+}
+@media(max-width:499px){
+    #main_container{
+        display: grid;
+        grid-template-columns: auto ;
     }
 }

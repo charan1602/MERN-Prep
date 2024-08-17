@@ -56,47 +56,49 @@ let promise3 = new Promise((resolve,reject)=>{
         reject("promise3 is rejecgted")
     },500)
 })
+// console.log(typeof(promise1))
 // Promise.all([promise1,promise2,promise3]).then((result)=>{
 //     console.log(result)
 // }).catch((result)=>{
 //     console.log(result)
 // })
-// Promise.allSettled([promise1,promise2,promise3]).then((result)=>{
-//     console.log(result)
-// }).catch((result)=>{
-//     console.log(result)
-// })
-Promise.race([promise1,promise2,promise3]).then((result)=>{
+Promise.allSettled([promise1,promise2,promise3]).then((result)=>{
     console.log(result)
 }).catch((result)=>{
     console.log(result)
 })
-const asyncFunc = (shouldReject) => {
-    return new Promise((resolve, reject) => {
-        if (shouldReject) {
-            reject("promise has been rejected");
-        } else {
-            resolve("First promise resolved");
-        }
-    })};
+// Promise.race([promise1,promise2,promise3]).then((result)=>{
+//     console.log(result)
+// }).catch((result)=>{
+//     console.log(result)
+// })
+// const asyncFunc = (shouldReject) => {
+//     return new Promise((resolve, reject) => {
+//         if (shouldReject) {
+//             reject("promise has been rejected");
+//         } else {
+//             resolve("First promise resolved");
+//         }
+//     })};
 
 // Usage example:
-asyncFunc(false)
-    // .then((result) => {
-    //     console.log(result); // Output: "First promise resolved and hello my name is charan"
-    //     return result; // Pass the result to the next .then
-    // })
-    .then((result) => {
-        console.log(result);
-        return new Promise((res,rej)=>{
-            res([result,"second promise"])
-        })
+// asyncFunc(false)
+//     // .then((result) => {
+//     //     console.log(result); // Output: "First promise resolved and hello my name is charan"
+//     //     return result; // Pass the result to the next .then
+//     // })
+//     .then((result) => {
+//         console.log(result);
+//         return new Promise((res,rej)=>{
+//             res([result,"second promise"])
+//         })
         
-        // Output: "First promise resolved and hello my name is charan"
-    })
-    .then(data=>console.log(data))
-    .catch((error) => {
-        console.error(error);
-    });
+//         // Output: "First promise resolved and hello my name is charan"
+//     })
+//     .then(data=>console.log(data,"caught yaaa"))
+    
+//     .catch((error) => {
+//         console.log(error);
+//     });
 
 
